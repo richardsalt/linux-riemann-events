@@ -27,7 +27,7 @@ This project
 | riemann.sh  | bash script to run the above two scripts in the correct order every 10 seconds  |
 
 Create a directory such as /etc/linux-riemann-events & put these 3 scripts into it.
-Then add this to your crontab to launch riemann.sh every minute ...
+Then add this to your crontab to launch riemann.sh every minute (see crontab-append.sh) ...
 
 ``` *  *  *  *  * /etc/linux-riemann-events/riemann.sh```
 
