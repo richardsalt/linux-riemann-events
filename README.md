@@ -23,9 +23,9 @@ This project
 | -------------        | ------------- |
 | riemann-get-stats.sh | bash script that does most of the work to gather interesting Linux statistics  |
 | riemann.py  | Python script that takes the output of riemann-get-stats.sh and generates the appropriate Riemann events  |
-| riemann.sh  | bash script to manage the above two scripts that should be launched by crontab every minute  |
-| crontab  | script to launch riemann.sh from crontab every minute |
+| riemann.sh  | bash script to manage the above two scripts that is  launched by crontab every minute  |
 
+riemann.sh should be launched from crontab every minute. Add this to your crontab ...
 
 ```bash *  *  *  *  * /etc/quill/riemann.sh```
 
