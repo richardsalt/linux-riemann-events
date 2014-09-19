@@ -5,7 +5,7 @@ Generate Riemann events for monitoring Linux server performance
 
 
 Pre-requisites
-==
+--
 
 * Bash
 * Python
@@ -16,15 +16,18 @@ To install Bernhard
 * yum install python-pip
 * pip install bernhard
 
-This project:
-* riemann-get-stats.sh - bash script that does most of the work to gather interesting Linux statistics
-* riemann.py - Pythin script that takes the output of riemann-get-stats.sh and generates the appropriate Riemann events & sets 
-* riemann.sh - simple bash script to manage the above two scripts that should be launched by crontab every minute
-* crontab - launch riemann.sh every minute - add this line to your crontab 
+This project
+--
+
+| Filename             | Details |
+| -------------        | ------------- |
+| riemann-get-stats.sh | bash script that does most of the work to gather interesting Linux statistics  |
+| riemann.py  | Python script that takes the output of riemann-get-stats.sh and generates the appropriate Riemann events  |
+| riemann.sh  | bash script to manage the above two scripts that should be launched by crontab every minute  |
+| crontab  | script to launch riemann.sh from crontab every minute |
+
 
 ```bash *  *  *  *  * /etc/quill/riemann.sh```
-
-
 
 
 Gothcas
