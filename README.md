@@ -23,11 +23,12 @@ This project
 | -------------        | ------------- |
 | riemann-get-stats.sh | bash script that does most of the work to gather interesting Linux statistics  |
 | riemann.py  | Python script that takes the output of riemann-get-stats.sh and generates the appropriate Riemann events  |
-| riemann.sh  | bash script to manage the above two scripts that is  launched by crontab every minute  |
+| riemann.sh  | bash script to run the above two scripts in the correct order every 10 seconds  |
 
-riemann.sh should be launched from crontab every minute. Add this to your crontab ...
+Create a directory such as /etc/linux-riemann-events & put these 3 scripts into it
+Then add this to your crontab to launch riemann.sh every minute ...
 
-```bash *  *  *  *  * /etc/quill/riemann.sh```
+```bash *  *  *  *  * /etc/linux-riemann-events/riemann.sh```
 
 
 Gothcas
