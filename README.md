@@ -25,16 +25,16 @@ This project
 | riemann.py  | Python script that takes the output of riemann-get-stats.sh and generates the appropriate Riemann events  |
 | riemann.sh  | bash script to run the above two scripts in the correct order every 10 seconds  |
 
-Create a directory such as /etc/linux-riemann-events & put these 3 scripts into it
+Create a directory such as /etc/linux-riemann-events & put these 3 scripts into it.
 Then add this to your crontab to launch riemann.sh every minute ...
 
-```bash *  *  *  *  * /etc/linux-riemann-events/riemann.sh```
+``` *  *  *  *  * /etc/linux-riemann-events/riemann.sh```
 
 
 Gothcas
 --
-iptables - riemann events use TCP & UDP port 5555
-selinux - may need some configuring
+* iptables - riemann events use TCP & UDP port 5555
+* selinux - may need some configuring
 
 
 Finally
