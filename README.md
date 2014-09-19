@@ -3,6 +3,7 @@ linux-riemann-events
 
 Generate Riemann events for monitoring Linux server performance
 
+We run a large number of Linux VM's and couldn't find any ready made scripts for generating the Riemann events to monitor their performance, so we rolled our own. Publishing it here in case its of any use to anyone out there. 
 
 Pre-requisites
 --
