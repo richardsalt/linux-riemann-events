@@ -9,7 +9,7 @@ Pre-requisites
 
 For yum based systems:
 
-yum install python-pip
-pip install bernhard
+* yum install python-pip
+* pip install bernhard
 
 
