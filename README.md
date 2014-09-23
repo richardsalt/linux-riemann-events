@@ -1,11 +1,10 @@
 linux-riemann-events
-====================
-
+==
 Generate Riemann events for monitoring Linux server performance
 
 We run a large number of Linux VM's and couldn't find any ready made scripts for generating the Riemann events to monitor their performance, so we rolled our own. Publishing it here in case its of any use to anyone out there. 
 
-Pre-requisites
+###Pre-requisites
 --
 
 * Bash
@@ -17,8 +16,7 @@ To install Bernhard
 * yum install python-pip
 * pip install bernhard
 
-This project
---
+###This project
 
 | Filename             | Details |
 | -------------        | ------------- |
@@ -32,14 +30,14 @@ Then add this to your crontab to launch riemann.sh every minute (see crontab-app
 ``` *  *  *  *  * /etc/linux-riemann-events/riemann.sh```
 
 
-Gothcas
---
+###Gothcas
+
 * iptables - riemann events use TCP & UDP port 5555
 * selinux - may need some configuring
 
 
-Finally
---
+###Finally
+
 You will obviously need some kind of monitoring to view the Riemann events
 http://riemann.io/index.html
 
